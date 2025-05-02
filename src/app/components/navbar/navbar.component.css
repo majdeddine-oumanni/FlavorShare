@@ -1,0 +1,14 @@
+.site-header {
+    background-color: var(--dark-blue);
+    padding: 1rem;
+    color: white;
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
