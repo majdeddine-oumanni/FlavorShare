@@ -1,0 +1,142 @@
+.recipe-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.recipe-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+}
+
+.recipe-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+.recipe-time {
+    display: flex;
+    align-items: center;
+}
+
+.recipe-author {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.star-rating {
+    color: var(--star-color);
+    font-size: 1.2rem;
+    letter-spacing: -2px;
+}
+
+.star-empty {
+    color: #ddd;
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.ingredients-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+.instructions {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.comments-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.comment-box {
+    background-color: white;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comment-author {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+.comment-text {
+    margin-top: 0.5rem;
+}
+
+.comment-input {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.comment-input input {
+    flex-grow: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    margin-right: 0.5rem;
+}
+
+.comment-input button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.comment-input button:hover {
+    background-color: #c24800;
+}
+
+@media (max-width: 768px) {
+    .recipe-meta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .recipe-author {
+        text-align: left;
+    }
+}
