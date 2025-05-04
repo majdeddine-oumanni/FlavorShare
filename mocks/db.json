@@ -1,0 +1,124 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Spaghetti Carbonara",
+      "rating": 5,
+      "cookingTime": "25 minutes",
+      "chef": "Chef Mario",
+      "ingredients": "Spaghetti, Eggs, Parmesan, Pancetta, Black Pepper",
+      "instructions": [
+        "Boil the pasta in salted water.",
+        "Cook pancetta in a pan until crisp.",
+        "Beat eggs and mix with grated Parmesan.",
+        "Combine hot pasta with pancetta and egg mixture.",
+        "Serve with extra cheese and pepper."
+      ],
+      "comments": [
+        "Classic Italian dish!",
+        "Very easy and delicious.",
+        "Make sure the pasta is hot enough to cook the eggs."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Chicken Curry",
+      "rating": 4,
+      "cookingTime": "45 minutes",
+      "chef": "Chef Aisha",
+      "ingredients": "Chicken, Curry Powder, Onion, Garlic, Tomato, Coconut Milk",
+      "instructions": [
+        "Sauté onions and garlic until soft.",
+        "Add chicken and curry powder, cook until browned.",
+        "Add chopped tomatoes and simmer.",
+        "Pour in coconut milk and cook until thickened.",
+        "Serve with rice or naan."
+      ],
+      "comments": [
+        "Rich and flavorful.",
+        "Great comfort food.",
+        "Add chili if you like it spicy."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Pancakes",
+      "rating": 3,
+      "cookingTime": "20 minutes",
+      "chef": "Chef Lily",
+      "ingredients": "Flour, Eggs, Milk, Sugar, Baking Powder",
+      "instructions": [
+        "Whisk together all ingredients in a bowl.",
+        "Heat a non-stick pan and pour batter.",
+        "Cook until bubbles form, then flip.",
+        "Cook until both sides are golden.",
+        "Serve with syrup or fruit."
+      ],
+      "comments": [
+        "Kids love it!",
+        "Quick breakfast idea.",
+        "Can be frozen and reheated."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Grilled Salmon",
+      "rating": 5,
+      "cookingTime": "30 minutes",
+      "chef": "Chef Gordon",
+      "ingredients": "Salmon, Lemon, Olive Oil, Dill, Garlic",
+      "instructions": [
+        "Marinate salmon with olive oil, garlic, and dill.",
+        "Preheat grill to high heat.",
+        "Grill salmon skin-side down for 5–6 minutes.",
+        "Flip and grill for 2–3 more minutes.",
+        "Serve with lemon wedges."
+      ],
+      "comments": [
+        "Healthy and delicious.",
+        "Lemon adds a fresh touch.",
+        "Don’t overcook the fish!"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Beef Stroganoff",
+      "rating": 4,
+      "cookingTime": "40 minutes",
+      "chef": "Chef Dmitri",
+      "ingredients": "Beef, Mushrooms, Onions, Sour Cream, Butter, Flour",
+      "instructions": [
+        "Sear beef strips in a pan, set aside.",
+        "Sauté mushrooms and onions in butter.",
+        "Sprinkle flour and cook briefly.",
+        "Add beef back, stir in sour cream.",
+        "Simmer until thick and creamy."
+      ],
+      "comments": [
+        "Best with egg noodles.",
+        "Very hearty and creamy.",
+        "Comfort food at its best."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Greek Salad",
+      "rating": 5,
+      "cookingTime": "15 minutes",
+      "chef": "Chef Eleni",
+      "ingredients": "Tomatoes, Cucumbers, Feta Cheese, Olives, Red Onion, Olive Oil",
+      "instructions": [
+        "Chop tomatoes, cucumbers, and red onions.",
+        "Add olives and crumbled feta cheese.",
+        "Drizzle with olive oil.",
+        "Sprinkle with oregano and toss gently.",
+        "Serve chilled."
+      ],
+      "comments": [
+        "Perfect for summer.",
+        "Light and fresh.",
+        "Pairs well with grilled meat."
+      ]
+    }
+  ]
+}
