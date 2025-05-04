@@ -3,275 +3,35 @@
     
     <div class="row g-4">
         <!-- Recipe Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/tomato-rice.jpg" alt="Tomato Rice" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Tomato Rice</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Recipe Card 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/zucchini-casserol.jpg" alt="Zucchini Casserole" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Zucchini Casserole</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
+         @for (recipe of recipes; track $index) {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="recipe-card">
+                    <img src="/images/tomato-rice.jpg" alt="Tomato Rice" class="recipe-image">
+                    <div class="p-3">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h3 class="recipe-title">{{recipe.name}}</h3>
+                            <span class="recipe-rating">
+                                <i class="bi bi-star-fill"></i> {{recipe.rating}}
+                            </span>
+                        </div>
+                        <div class="recipe-meta">
+                            <i class="bi bi-clock me-1"></i> {{recipe.cookingTime}}
+                        </div>
+                        <p class="recipe-desc">
+                            {{recipe.instructions[0]}}
+                            <a href="#" class="read-more">Read more</a>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <button class="action-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                            <button class="nav-button px-4">
+                                <i class="bi bi-bookmark-plus"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Recipe Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/Pani-puri.jpg" alt="Pani puri" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Pani puri</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+         }
     </div>
-    <div class="row g-4">
-        <!-- Recipe Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/tomato-rice.jpg" alt="Tomato Rice" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Tomato Rice</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Recipe Card 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/zucchini-casserol.jpg" alt="Zucchini Casserole" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Zucchini Casserole</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Recipe Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/Pani-puri.jpg" alt="Pani puri" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Pani puri</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row g-4">
-        <!-- Recipe Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/tomato-rice.jpg" alt="Tomato Rice" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Tomato Rice</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Recipe Card 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/zucchini-casserol.jpg" alt="Zucchini Casserole" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Zucchini Casserole</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Recipe Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="recipe-card">
-                <img src="/images/Pani-puri.jpg" alt="Pani puri" class="recipe-image">
-                <div class="p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <h3 class="recipe-title">Pani puri</h3>
-                        <span class="recipe-rating">
-                            <i class="bi bi-star-fill"></i> 4.8
-                        </span>
-                    </div>
-                    <div class="recipe-meta">
-                        <i class="bi bi-clock me-1"></i> 1 hr and 30 min
-                    </div>
-                    <p class="recipe-desc">
-                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-                        <a href="#" class="read-more">Read more</a>
-                    </p>
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <button class="action-btn">
-                            <i class="bi bi-heart"></i>
-                        </button>
-                        <button class="nav-button px-4">
-                            <i class="bi bi-bookmark-plus"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</section>       
